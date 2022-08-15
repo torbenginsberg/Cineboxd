@@ -2,7 +2,7 @@ import React from "react";
 
 class LoginForm extends React.Component {
     constructor(props) {
-        supoer(props);
+        super(props);
         this.state = {
             username: '',
             password: ''
@@ -47,6 +47,7 @@ class LoginForm extends React.Component {
                                 className='login-input'
                             />
                         </label>
+                        <br />
                         <label className="login-box-label">Password:
                             <br />
                             <input type="password"

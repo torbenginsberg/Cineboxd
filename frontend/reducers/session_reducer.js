@@ -19,6 +19,8 @@ const sessionReducer = (state = _nullUser, action) => {
             return Object.assign({}, { id: action.currentUser.id }); // sets sesison id to the action's user.id
         case LOGOUT_CURRENT_USER:
             return _nullUser; // sets session id to null
+        case RECEIVE_ERRORS:
+            return null;
         default:
             return state;
     }
