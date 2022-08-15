@@ -1,4 +1,6 @@
 import React from "react";
+import { closeModal } from '../../actions/modal_actions';
+import { withRouter } from 'react-router-dom';
 
 class LoginForm extends React.Component {
     constructor(props) {
@@ -13,7 +15,13 @@ class LoginForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
-        this.props.login(user);
+        this.props.login(user)
+            .then(() => {
+                this.props.closeModal();
+                // if (this.props.location.pathname === '/') {
+                //     this.props.history.push(`/`)
+                // }
+            })
     }
 
     update(field) {
@@ -37,6 +45,7 @@ class LoginForm extends React.Component {
     render() {
         return(
             <div className='login-form-container'>
+                <div onClick={this.props.closeModal} className="close-x-login">X</div>
                 <form onSubmit={this.handleSubmit} className='login-form-box'>
                     <div className="login-form">
                         <label className="login-box-label">Username:
@@ -68,4 +77,4 @@ class LoginForm extends React.Component {
     }
 };
 
-export default LoginForm;
+export default withRouter(LoginForm);

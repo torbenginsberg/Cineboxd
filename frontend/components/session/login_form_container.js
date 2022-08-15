@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import LoginForm from './login_form';
 import { login } from '../../actions/session_actions';
 import { Link } from 'react-router-dom';
+import { closeModal } from '../../actions/modal_actions';
 
 const mSTP = state => {
     return {
@@ -12,7 +13,8 @@ const mSTP = state => {
 
 const mDTP = dispatch => {
     return{
-        login: user => dispatch(login(user))
+        login: user => dispatch(login(user)),
+        closeModal: () => dispatch(closeModal())
     };
 };
 
