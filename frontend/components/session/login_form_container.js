@@ -13,7 +13,7 @@ const mSTP = state => {
 
 const mDTP = dispatch => {
     return{
-        login: user => dispatch(login(user)),
+        processLoginForm: user => dispatch(login(user)),
         closeModal: () => dispatch(closeModal())
     };
 };

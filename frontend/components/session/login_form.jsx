@@ -15,7 +15,7 @@ class LoginForm extends React.Component {
     handleSubmit(e) {
         e.preventDefault();
         const user = Object.assign({}, this.state);
-        this.props.login(user)
+        this.props.processLoginForm(user)
             .then(() => {
                 this.props.closeModal();
                 // if (this.props.location.pathname === '/') {
@@ -65,7 +65,7 @@ class LoginForm extends React.Component {
                                 className='login-input'
                             />
                         </label>
-                        <input type="submit" className="login-submit" value='Sign In'/>
+                        <input type="submit" className="login-submit" value='SIGN IN'/>
                     </div>
 
                     <div className="login-errors">
