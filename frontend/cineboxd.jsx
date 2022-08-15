@@ -1,15 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import configureStore from './store/store';
+import Root from './components/root';
 
 document.addEventListener('DOMContentLoaded', () => {
+    const store = configureStore();
+
+    //testing
+    window.getState = store.getState;
+    window.dispatch = store.dispatch;
+    //testing
+
     const root = document.getElementById('root');
-    const store = configureStore()
-
-    //testing
-    window.getState = store.getState
-    window.dispatch = store.dispatch
-    //testing
-
-    ReactDOM.render(<h1>Welcome to Cineboxd</h1>, root);
+    ReactDOM.render(<Root store={store}/>, root);
 });
