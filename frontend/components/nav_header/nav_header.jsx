@@ -17,8 +17,7 @@ export default ({ currentUser, logout, openModal}) => {
         <nav className="nav-header">
             <ul>
                 <li><a className="nav-item" onClick={() => openModal({ modal_type: 'login'})}>Sign In</a></li>
-                {/* <li><a className="nav-item" onClick={() => openModal({ modal_type: 'signup'})}>Create Account</a></li> */}
-                <li><p className="nav-item">Sign Up</p></li>
+                <li><a className="nav-item" onClick={() => openModal({ modal_type: 'signup'})}>Create Account</a></li>
                 <li><p className="nav-item">Activity</p></li>
                 <li><p className="nav-item">Films</p></li>
                 <li><p className="nav-item">Lists</p></li>

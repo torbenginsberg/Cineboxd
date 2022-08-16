@@ -32,14 +32,14 @@
 	cursor: pointer;
 	background: #00b020;
 	display: inline-block;
-	padding: 7 px;
+	padding: 6px;
 	padding-top: 3px;
 	padding-bottom: 3px;
-	font-size: 14px;
+	font-size: 12px;
 	text-transform: uppercase;
 	border-width: 0px;
 	border-radius: 3px;
-	font-weight: 600;
+	font-weight: 550;
 	top: 30%;
 	right: 3%;
 }

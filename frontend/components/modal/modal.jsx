@@ -2,6 +2,7 @@ import React from "react";
 import { closeModal } from "../../actions/modal_actions";
 import { connect } from "react-redux";
 import LoginFormContainer from "../session/login_form_container";
+import SignupFormContainer from "../session/signup_form_container";
 
 function Modal({modal, closeModal}) {
     if (!modal) {
@@ -12,13 +13,16 @@ function Modal({modal, closeModal}) {
         case 'login':
             targetComponent = <LoginFormContainer />;
             break;
+        case 'signup':
+            targetComponent = <SignupFormContainer />
+            break;
         default:
             return null;
     }
 
     return(
-        <div className={modal.modal_type === 'login' ? 'modal-background-login' : 'modal-background'} onClick={closeModal}>
-            <div className={modal.modal_type === 'login' ? 'modal-child-login' : 'modal-child'} onClick={e => e.stopPropagation()}>
+        <div className={`modal-background-${modal.modal_type}`} onClick={closeModal}>
+            <div className={`modal-child-${modal.modal_type}`} onClick={e => e.stopPropagation()}>
                 {targetComponent}
             </div>
         </div>
