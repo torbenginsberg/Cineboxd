@@ -48,7 +48,7 @@ class SignupForm extends React.Component {
                     <h2>JOIN CINEBOXD</h2>
                     <br />
                     <div className="signup-form">
-                        <label className="signup-box-label">Username:
+                        <label className="signup-box-label">Username
                             <br />
                             <input type="text"
                                 value={this.state.username}
@@ -57,7 +57,7 @@ class SignupForm extends React.Component {
                             />
                         </label>
                         <br />
-                        <label className="signup-box-label">Email:
+                        <label className="signup-box-label">Email address
                             <br />
                             <input type="text"
                                 value={this.state.email}
@@ -66,7 +66,7 @@ class SignupForm extends React.Component {
                             />
                         </label>
                         <br />
-                        <label className="signup-box-label">Password:
+                        <label className="signup-box-label">Password
                             <br />
                             <input type="password"
                                 value={this.state.password}

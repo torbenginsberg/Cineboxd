@@ -36,24 +36,18 @@
     flex-direction: column;
 }
 
-.close-x {
+.close-x-signup {
     position: absolute;
-    top: -8px;
-    right: -8px;
+    top: 20px;
+    right: 20px;
     cursor: pointer;
-    
     border-radius: 50%;
     width: 28px;
     height: 28px;
     text-align: center;
-    line-height: 28px;
-
-    font-size: 12px;
-
+    font-size: 16px;
     color: lightgray;
     cursor: pointer;
-    background: orange;
-    box-shadow: inset 0 1px 0 hsla(0,0%,100%,.3)
 }
 
 .signup-form-container h1 {
@@ -78,13 +72,11 @@
     line-height: 1;
     box-sizing: border-box;
     border-radius: 3px;
-
     background-color: #cde;
     color: #567;
-    box-shadow: inset 0 -1px 0 #fff;
     display: block;
     width: 100%;
-    margin: 0;
+    margin-top: 2px;
 }
 
 .signup-submit {
@@ -94,8 +86,9 @@
     display: inline-block;
     width: 25%;
     padding: 6px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 2px;
     font-size: 12px;
     font-weight: 550;
+    letter-spacing: .075em;
 }
