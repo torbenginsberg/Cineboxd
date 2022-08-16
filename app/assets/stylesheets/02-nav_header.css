@@ -1,0 +1,47 @@
+.nav-bar {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 15% 20px 15%;
+	align-items: center;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	height: 95px;
+	opacity: .7;
+	background-color: transparent;
+	background-repeat: repeat-x;
+	margin: 0 auto;
+}
+
+.nav-item {
+	text-transform: uppercase;
+	cursor: pointer;
+}
+
+.nav-bar a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.nav-header {
+	display: flex;
+	align-items: center;
+}
+
+.nav-header > ul > li {
+	display: inline-block;
+	margin-left: 10px;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+}
+
+.logo * {
+	display: inline-block;
+	margin-right: 10px;
+}

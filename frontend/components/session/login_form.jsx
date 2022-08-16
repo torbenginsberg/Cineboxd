@@ -18,9 +18,7 @@ class LoginForm extends React.Component {
         this.props.processLoginForm(user)
             .then(() => {
                 this.props.closeModal();
-                // if (this.props.location.pathname === '/') {
-                //     this.props.history.push(`/`)
-                // }
+                // might want to do something with the history here
             })
     }
 
