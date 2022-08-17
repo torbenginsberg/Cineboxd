@@ -1,27 +1,41 @@
 import React from "react";
 import { Link } from 'react-router-dom';
+import ProfileDropdownContainer from "./profile_dropdown_container";
 
 export default ({ currentUser, logout, openModal}) => {
+    const handleProfileMouseOver = () => {
+        let target = document.getElementById('profile-dropdown');
+        target.style.display = 'block';
+    }
+
+    const handleProfileMouseOut = () => {
+        let target = document.getElementById('profile-dropdown');
+        target.style.display = 'none';
+    }
+
     const display = currentUser ? (
         <nav className="nav-header">
-            <ul>
-                <li><p className="nav-item">Profile</p></li>
-                <li><a className="nav-item" onClick={logout}>Log Out</a></li>
-                <li><p className="nav-item">Activity</p></li>
-                <li><p className="nav-item">Films</p></li>
-                <li><p className="nav-item">Lists</p></li>
-                <li><p className="nav-item">Search</p></li>
+            <ul className="nav-items">
+                <li onMouseOver={handleProfileMouseOver} onMouseOut={handleProfileMouseOut} className="nav-item">
+                    <a className="nav-item" id="profile-name-text">{currentUser.username}</a>
+                    <ProfileDropdownContainer />
+                </li>
+                <li className="nav-item"><a className="nav-item-link" onClick={logout}>Log Out</a></li>
+                <li className="nav-item"><a className="nav-item-link">Activity</a></li>
+                <li className="nav-item"><a className="nav-item-link">Films</a></li>
+                <li className="nav-item"><a className="nav-item-link">Lists</a></li>
+                <li className="nav-item"><a className="nav-item-link">Search</a></li>
             </ul>
         </nav>
     ) : (
         <nav className="nav-header">
             <ul>
-                <li><a className="nav-item" onClick={() => openModal({ modal_type: 'login'})}>Sign In</a></li>
-                <li><a className="nav-item" onClick={() => openModal({ modal_type: 'signup'})}>Create Account</a></li>
-                <li><p className="nav-item">Activity</p></li>
-                <li><p className="nav-item">Films</p></li>
-                <li><p className="nav-item">Lists</p></li>
-                <li><p className="nav-item">Search</p></li>
+                <li className="nav-item"><a className="nav-item-link" onClick={() => openModal({ modal_type: 'login'})}>Sign In</a></li>
+                <li className="nav-item"><a className="nav-item-link" onClick={() => openModal({ modal_type: 'signup'})}>Create Account</a></li>
+                <li className="nav-item"><a className="nav-item-link">Activity</a></li>
+                <li className="nav-item"><a className="nav-item-link">Films</a></li>
+                <li className="nav-item"><a className="nav-item-link">Lists</a></li>
+                <li className="nav-item"><a className="nav-item-link">Search</a></li>
             </ul>
         </nav>
     );

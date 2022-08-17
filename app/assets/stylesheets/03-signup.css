@@ -91,4 +91,7 @@
     font-size: 12px;
     font-weight: 550;
     letter-spacing: .075em;
+    border-radius: 3px;
+    top: 30%;
+    right: 3%;
 }

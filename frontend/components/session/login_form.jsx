@@ -32,7 +32,7 @@ class LoginForm extends React.Component {
         return(
             <ul>
                 {Object.values(this.props.errors).map((err, idx) => (
-                    <li key={`err${idx}`}>
+                    <li key={`err${idx}`} className="login-errors">
                         {err}
                     </li>
                 ))}
@@ -65,10 +65,7 @@ class LoginForm extends React.Component {
                         </label>
                         <input type="submit" className="login-submit" value='SIGN IN'/>
                     </div>
-
-                    <div className="login-errors">
-                        {this.renderErrors()}
-                    </div>
+                    {this.renderErrors()}
                 </form>
             </div>
         );
