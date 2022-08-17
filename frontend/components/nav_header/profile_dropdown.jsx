@@ -15,5 +15,5 @@ export default ({ logout }) => {
             <li><a href="/">Lists</a></li>
             <li className="divider"><a onClick={logout}>Sign Out</a></li>
         </ul>
-    )
-}
+    );
+};

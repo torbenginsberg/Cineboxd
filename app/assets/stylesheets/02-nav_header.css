@@ -12,7 +12,7 @@
 	background-color: transparent;
 	background-repeat: repeat-x;
 	margin: 0 auto;
-	background: #101216;
+	background: #1D1B1B;
 }
 
 .nav-item-link {
@@ -68,6 +68,11 @@
 	letter-spacing: 0;
 	text-transform: none;
 	margin: 0;
+}
+
+.nav-dropdown a:hover {
+	background: rgb(60, 67, 74);
+	color: white;
 }
 
 .nav-dropdown .divider {
