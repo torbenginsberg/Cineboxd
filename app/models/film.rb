@@ -14,4 +14,6 @@
 #
 class Film < ApplicationRecord
     validates :title, :year, :length, :director_name, :summary, presence: true
+
+    has_many_attached :photos
 end
