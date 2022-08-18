@@ -3,16 +3,17 @@
 	justify-content: space-between;
 	padding: 0px 15% 0px 15%;
 	align-items: center;
-	position: absolute;
+	position: relative;
 	top: 0;
 	right: 0;
 	left: 0;
-	height: 65px;
+	height: 72px;
 	opacity: .7;
 	background-color: transparent;
 	background-repeat: repeat-x;
 	margin: 0 auto;
 	background: #1D1B1B;
+	z-index: 100;
 }
 
 .nav-item-link {
