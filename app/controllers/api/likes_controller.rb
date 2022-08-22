@@ -1,35 +1,25 @@
 class Api::LikesController < ApplicationController
     def create
-        like = Like.new(like_params)
-        like.user_id = current_user.id
-        like.save
-        @film = Film.find_by(id: like.likeable_item_id)
-    #     if like.likeable_type == "Film"
-    #         @films = Film.where(id: like.likeable_item_id)
-    #    else
-    #         @films = Film.where(id: (Review.where(id: like.likeable_item_id)[0].film_id))
-    #    end
-    #    render "api/films/index"
-    end
-
-    def index
-        #tbd
+        @like = Like.new(like_params)
+        if @like.save
+            render :show
+        else
+            render json: @like.errors.full_messages, status: 400
+        end
     end
 
     def destroy
-        like = Like.find_by(id: params[:id])
-        like.destroy
-        @film = Film.find_by(id: like.likeable_item_id)
-        # if like.likeable_type == "Film"
-        #     @films = Film.where(id: like.likeable_item_id)
-        # else
-        #     @films = Film.where(id: (Review.where(id: like.likeable_item_id)[0].film_id))
-        # end
-        # render 'api/films/index'
+        @like = Like.find_by(id: params[:id])
+        if @like
+            @like.destroy
+            render :show
+        else
+            render json: ['Unable to find like'], status: 404
+        end
     end
 
     private
     def like_params
-        params.require(:like).permit(:likeable_type, :likeable_item_id)
+        params.require(:like).permit(:likeable_type, :likeable_item_id, :user_id)
     end
 end
