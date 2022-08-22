@@ -46,4 +46,9 @@ class LikeButton extends React.Component {
             )
         }
     }
-}
+};
+
+export default connect(
+    mSTP,
+    mDTP
+)(LikeButton);
