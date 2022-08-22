@@ -17,4 +17,8 @@ class Film < ApplicationRecord
 
     has_one_attached :poster
     has_one_attached :backdrop
+
+    has_many :likes,
+    as: :likeable,
+    dependent: :destroy
 end

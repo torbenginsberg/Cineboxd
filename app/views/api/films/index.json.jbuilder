@@ -4,4 +4,12 @@
         # also need for actors and genres
         # prob need something for photo when we get there
     end
+
+    json.likes do
+        film.likes.each do |like|
+            json.set! like.id do
+                json.partial! 'api/likes/like', like: like
+            end
+        end
+    end
 end

@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { ReactDOM } from "react";
-import film_show_container from "./film_show_container";
+import LikeButton from "./like_button";
+import { AiOutlineEye } from 'react-icons/ai';
+import { AiOutlineClockCircle } from 'react-icons/ai';
 
 
 class FilmShow extends React.Component {
@@ -10,7 +12,6 @@ class FilmShow extends React.Component {
     }
 
     componentDidMount() {
-        console.log(this.props);
         this.props.fetchFilm(this.props.match.params.filmId);
     }
 
@@ -69,7 +70,26 @@ class FilmShow extends React.Component {
                                 <aside className="sidebar">
                                     <section id="userpanel" className="actions-panel">
                                         <ul className="actions-panel-list">
-                                            <li className="actions-row1">toggle actions</li>
+                                            <li className="actions-row1">
+                                                <span className="action-watch">
+                                                    <i><AiOutlineEye /></i>
+                                                    <p>Watch</p>
+                                                </span>
+                                                <span className="action-like">
+                                                    <LikeButton
+                                                        currentUser={this.props.currentUser}
+                                                        likeable_id={this.props.film.id}
+                                                        likeable_type={'Film'}
+                                                        user_id={this.props.currentUser.id}
+                                                    />
+                                                </span>
+                                                <span className="action-watchlist">
+                                                    <i>
+                                                        <AiOutlineClockCircle />
+                                                    </i>
+                                                    <p>Watchlist</p>
+                                                </span>
+                                            </li>
                                             <li className="actions-row-rating">rating</li>
                                             <li>review or log</li>
                                             <li>add to lists</li>

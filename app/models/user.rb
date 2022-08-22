@@ -18,6 +18,8 @@ class User < ApplicationRecord
 
     attr_reader :password
 
+    has_many :likes
+
     # has many logged films??
     # has_many watchlist films??
     # has many likes
