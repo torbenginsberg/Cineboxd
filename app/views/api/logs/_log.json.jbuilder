@@ -1,0 +1,1 @@
+json.extract! log, :id, :film_id, :user_id

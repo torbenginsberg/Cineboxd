@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { ReactDOM } from "react";
 import LikeButton from "./like_button";
-import { AiOutlineEye } from 'react-icons/ai';
+import LogButton from './log_button';
 import { AiOutlineClockCircle } from 'react-icons/ai';
 
 
@@ -72,8 +72,11 @@ class FilmShow extends React.Component {
                                         <ul className="actions-panel-list">
                                             <li className="actions-row1">
                                                 <span className="action-watch">
-                                                    <i><AiOutlineEye /></i>
-                                                    <p>Watch</p>
+                                                    <LogButton
+                                                        currentUser={this.props.currentUser}
+                                                        film_id={this.props.film.id} 
+                                                        user_id={this.props.currentUser.id}
+                                                    />
                                                 </span>
                                                 <span className="action-like">
                                                     <LikeButton

@@ -18,7 +18,8 @@ class User < ApplicationRecord
 
     attr_reader :password
 
-    has_many :likes
+    has_many :likes, dependent: :destroy
+    has_many :logs, dependent: :destroy
 
     # has many logged films??
     # has_many watchlist films??

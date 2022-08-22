@@ -5,12 +5,14 @@ import { combineReducers } from "redux";
 import usersReducer from "./users_reducer";
 import filmsReducer from "./films_reducer";
 import { likesReducer } from "./likes_reducer";
+import { logsReducer } from "./logs_reducer";
 
 
 const entitiesReducer = combineReducers({
     users: usersReducer,
     films: filmsReducer,
-    likes: likesReducer
+    likes: likesReducer,
+    logs: logsReducer
 })
 
 export default entitiesReducer;
