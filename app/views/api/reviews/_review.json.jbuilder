@@ -1,0 +1,1 @@
+json.extract! review, :id, :user_id, :film_id, :date_watched, :body

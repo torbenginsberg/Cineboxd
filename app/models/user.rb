@@ -20,13 +20,7 @@ class User < ApplicationRecord
 
     has_many :likes, dependent: :destroy
     has_many :logs, dependent: :destroy
-
-    # has many logged films??
-    # has_many watchlist films??
-    # has many likes
-    # has many reviews
-    # has many ratings
-    # has many lists
+    has_many :reviews, dependent: :destroy
 
     def self.generate_session_token
         SecureRandom::urlsafe_base64
