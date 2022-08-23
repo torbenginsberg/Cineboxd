@@ -75,7 +75,7 @@ class SignupForm extends React.Component {
                             />
                         </label>
                         <br />
-                        <input type="submit" className="signup-submit" value='SIGN UP'/>
+                        <input type="submit" className="green-submit" value='SIGN UP'/>
                     </div>
                     <div className="signup-errors">
                         {this.renderErrors()}
