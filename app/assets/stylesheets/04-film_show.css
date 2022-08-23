@@ -245,3 +245,7 @@
 #has-seen-film {
     color: #00b020;
 }
+
+.basic-action-row {
+    cursor: pointer;
+}

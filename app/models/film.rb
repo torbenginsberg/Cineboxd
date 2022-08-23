@@ -22,6 +22,6 @@ class Film < ApplicationRecord
     as: :likeable,
     dependent: :destroy
 
-    has_many :log
+    has_many :logs
     has_many :reviews
 end

@@ -43,7 +43,7 @@ class ReviewForm extends React.Component {
 
     render() {
         return (
-            <div className="review-form-container">
+            <div className="review-form-wrapper">
                 <div onClick={this.props.closeModal} className='close-x-review'>X</div>
 
                 <form onSubmit={this.handleSubmit}>

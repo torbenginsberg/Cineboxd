@@ -1,6 +1,7 @@
 import { connect } from "react-redux";
 import FilmShow from './film_show';
 import { fetchFilm } from "../../actions/film_actions";
+import { openModal } from "../../actions/modal_actions";
 
 const mSTP = (state, ownProps) => {
     return ({
@@ -10,7 +11,8 @@ const mSTP = (state, ownProps) => {
 };
 
 const mDTP = dispatch => ({
-    fetchFilm: filmId => dispatch(fetchFilm(filmId))
+    fetchFilm: filmId => dispatch(fetchFilm(filmId)),
+    openModal: modal => dispatch(openModal(modal))
 });
 
 export default connect(

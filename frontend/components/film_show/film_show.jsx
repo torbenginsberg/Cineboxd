@@ -5,7 +5,6 @@ import LikeButton from "./like_button";
 import LogButton from './log_button';
 import { AiOutlineClockCircle } from 'react-icons/ai';
 
-
 class FilmShow extends React.Component {
     constructor(props){
         super(props)
@@ -17,7 +16,9 @@ class FilmShow extends React.Component {
 
     render() {
         if (!this.props.film) return null;
-        const { film } = this.props
+        const { film, openModal } = this.props
+        const reviewStatusText = film.review ? 'Edit your review...' : 'Write a review...';
+        const modalType = film.review ? 'edit-review' : 'review';
         return(
             <div>
                 <div className="film-show-backdrop-container">
@@ -94,7 +95,7 @@ class FilmShow extends React.Component {
                                                 </span>
                                             </li>
                                             <li className="actions-row-rating">rating</li>
-                                            <li>review or log</li>
+                                            <li className="basic-action-row" onClick={() => openModal({ modal_type: modalType})} film={film}>{reviewStatusText}</li>
                                             <li>add to lists</li>
                                         </ul>
                                     </section>

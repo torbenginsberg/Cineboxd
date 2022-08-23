@@ -1,0 +1,52 @@
+.modal-background-review {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.modal-child-review {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal-background-edit-review {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+}
+
+.modal-child-edit-review {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close-x-review {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    font-size: 16px;
+    color: lightgray;
+    cursor: pointer;
+}
+
+.review-form-wrapper > form > img {
+    width: 156px;
+    height: 231px;
+}
