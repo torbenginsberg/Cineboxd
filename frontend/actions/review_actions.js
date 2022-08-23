@@ -4,6 +4,8 @@ import * as ReviewApiUtil from '../util/review_api_utils';
 export const RECEIVE_REVIEW = 'RECEIVE_REVIEW';
 export const REMOVE_REVIEW = "REMOVE_REVIEW";
 export const RECEIVE_FILM_REVIEWS = 'RECEIVE_FILM_REVIEWS';
+export const RECEIVE_REVIEW_ERRORS = 'RECEIVE_REVIEW_ERRORS';
+export const CLEAR_ERRORS = 'CLEAR_ERRORS';
 
 //action creators
 const receiveReview = review => ({
@@ -20,6 +22,16 @@ const receiveFilmReviews = reviews => ({
     type: RECEIVE_FILM_REVIEWS,
     reviews
 });
+
+export const receiveErrors = errors => ({
+    type: RECEIVE_REVIEW_ERRORS,
+    errors
+});
+
+export const clearErrors = () => ({
+    type: CLEAR_ERRORS
+})
+
 
 
 //thunk action creators
