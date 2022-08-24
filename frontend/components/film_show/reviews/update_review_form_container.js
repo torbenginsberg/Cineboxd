@@ -1,6 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import { fetchReview, updateReview } from "../../../actions/review_actions";
+import { fetchReview, updateReview, deleteReview } from "../../../actions/review_actions";
 import ReviewForm from './review_form';
 import { openModal, closeModal } from "../../../actions/modal_actions";
 
@@ -15,7 +15,8 @@ const mSTP = state => {
 
 const mDTP = dispatch => ({
     closeModal: () => dispatch(closeModal()),
-    updateReview: review => dispatch(updateReview(review))
+    updateReview: review => dispatch(updateReview(review)),
+    deleteReview: review => dispatch(deleteReview(review))
 });
 
 class UpdateReviewForm extends React.Component {
@@ -27,6 +28,7 @@ class UpdateReviewForm extends React.Component {
                 closeModal={this.props.closeModal}
                 updateReview={this.props.updateReview}
                 currentUserId={this.props.currentUserId}
+                deleteReview={this.props.deleteReview}
             />
         );
     }

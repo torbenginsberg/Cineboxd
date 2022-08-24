@@ -19,6 +19,7 @@ class ReviewForm extends React.Component {
             };
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleDelete = this.handleDelete.bind(this);
     }
 
     handleSubmit(e) {
@@ -35,7 +36,14 @@ class ReviewForm extends React.Component {
             this.props.updateReview(review).then(() => this.props.closeModal());
         }
 
-        // window.location.reload(false);
+        window.location.reload(false);
+    }
+
+    handleDelete(e) {
+        e.preventDefault();
+        let reviewId = this.props.review.id
+        this.props.deleteReview(reviewId).then(() => this.props.closeModal());
+        window.location.reload(false);
     }
 
     update(field) {
@@ -45,6 +53,7 @@ class ReviewForm extends React.Component {
     }
 
     render() {
+        const deleteStyle = this.props.review ? 'block' : 'none';
         return (
             <div className="review-form-wrapper">
                 <div className="review-form-container">
@@ -97,8 +106,8 @@ class ReviewForm extends React.Component {
                                     <div className="inner-submit-container">
                                         <input type="submit" className="green-submit" value="SAVE"/>
                                     </div>
-                                    <div className="delete-button-container">
-                                        <button className="green-submit">DELETE</button>
+                                    <div id="delete-button-container" style={{display: deleteStyle}}>
+                                        <button onClick={this.handleDelete} className="green-submit">DELETE</button>
                                     </div>
                                 </div>
                             </form>

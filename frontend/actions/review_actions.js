@@ -42,7 +42,7 @@ export const updateReview = review => dispatch => ReviewApiUtil.updateReview(rev
     .then(review => dispatch(receiveReview(review)));
 
 export const deleteReview = reviewId => dispatch => ReviewApiUtil.deleteReview(reviewId)
-    .then(review => dispatch(removeReview(review)));
+    .then(() => dispatch(removeReview(reviewId)));
 
 export const fetchFilmReviews = filmId => dispatch => ReviewApiUtil.fetchFilmReviews(filmId)
     .then(reviews => dispatch(receiveFilmReviews(reviews)));
