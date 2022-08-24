@@ -4,10 +4,14 @@ import { fetchReview, updateReview } from "../../../actions/review_actions";
 import ReviewForm from './review_form';
 import { openModal, closeModal } from "../../../actions/modal_actions";
 
-const mSTP = (state, ownProps) => ({
-    currentUserId: state.session.id,
-    film: state.entities.films[ownProps.match.params.filmId]
-});
+const mSTP = state => {
+    let targetReview = Object.values(state.entities.reviews).find(review => review.user_id === state.session.id)
+    return {
+        currentUserId: state.session.id,
+        film: state.entities.films[state.ui.showFilmId],
+        review: targetReview
+    }
+};
 
 const mDTP = dispatch => ({
     closeModal: () => dispatch(closeModal()),
@@ -18,7 +22,6 @@ class UpdateReviewForm extends React.Component {
     render() {
         return (
             <ReviewForm
-                action={this.props.action}
                 review={this.props.review}
                 film={this.props.film}
                 closeModal={this.props.closeModal}

@@ -3,7 +3,7 @@ import { createReview } from '../../../actions/review_actions';
 import ReviewForm from './review_form';
 import { openModal, closeModal } from '../../../actions/modal_actions';
 
-const mSTP = (state, ownProps) => {
+const mSTP = state => {
     return {
         currentUserId: state.session.id,
         film: state.entities.films[state.ui.showFilmId]

@@ -20,6 +20,7 @@ class Api::ReviewsController < ApplicationController
     end
 
     def update
+        debugger
         @review = Review.find(params[:id])
 
         if @review.update(review_params)

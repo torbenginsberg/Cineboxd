@@ -33,6 +33,8 @@ class ReviewForm extends React.Component {
         } else {
             this.props.updateReview(review).then(() => this.props.closeModal());
         }
+
+        window.location.reload(false);
     }
 
     handlePosterMouseOver() {

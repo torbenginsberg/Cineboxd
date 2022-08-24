@@ -14,11 +14,16 @@ class FilmShow extends React.Component {
         this.props.fetchFilm(this.props.match.params.filmId);
     }
 
+    currentUserReview() {
+        let theCurrentUser = this.props.currentUser
+        return Object.values(this.props.film.reviews).find(review => review.user_id === theCurrentUser.id);
+    }
+
     render() {
         if (!this.props.film) return null;
         const { film, openModal } = this.props
-        const reviewStatusText = film.review ? 'Edit your review...' : 'Write a review...';
-        const modalType = film.review ? 'edit-review' : 'review';
+        const reviewStatusText = this.currentUserReview() ? 'Edit your review...' : 'Write a review...';
+        const modalType = this.currentUserReview() ? 'edit-review' : 'review';
         return(
             <div>
                 <div className="film-show-backdrop-container">
