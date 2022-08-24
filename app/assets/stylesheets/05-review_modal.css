@@ -186,6 +186,8 @@
 .submit-container {
     position: relative;
     margin-bottom: 0;
+    width: 532px;
+    height: 10px;
 }
 
 .inner-submit-container {
@@ -196,4 +198,10 @@
     width: 100%;
     padding-left: 8px;
     padding-right: 8px;
+}
+
+.submit-container > div > button {
+    background-color: #89a;
+    float: right;
+    width: 75px;
 }

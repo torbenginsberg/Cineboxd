@@ -9,7 +9,8 @@ class ReviewForm extends React.Component {
             const datePlaceholder = (props.review.date_watched ? props.review.date_watched : '');
             this.state = {
                 body: props.review.body,
-                date_watched: datePlaceholder
+                date_watched: datePlaceholder,
+                id: props.review.id
             };
         } else {
             this.state = {
@@ -34,7 +35,7 @@ class ReviewForm extends React.Component {
             this.props.updateReview(review).then(() => this.props.closeModal());
         }
 
-        window.location.reload(false);
+        // window.location.reload(false);
     }
 
     handlePosterMouseOver() {
@@ -105,6 +106,9 @@ class ReviewForm extends React.Component {
                                 <div className="submit-container">
                                     <div className="inner-submit-container">
                                         <input type="submit" className="green-submit" value="SAVE"/>
+                                    </div>
+                                    <div className="delete-button-container">
+                                        <button className="green-submit">DELETE</button>
                                     </div>
                                 </div>
                             </form>

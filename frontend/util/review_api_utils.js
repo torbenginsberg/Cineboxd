@@ -6,13 +6,13 @@ export const createReview = review => (
     })
 );
 
-export const updateReview = review => (
-    $.ajax({
+export const updateReview = review => {
+    return $.ajax({
         url: `api/reviews/${review.id}`,
         method: 'PATCH',
         data: { review }
     })
-);
+};
 
 export const deleteReview = reviewId => (
     $.ajax({
