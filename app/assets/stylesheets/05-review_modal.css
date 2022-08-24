@@ -174,7 +174,7 @@
 
 .body-input-container textarea {
     height: 90px;
-    line-height: 1.4;
+    line-height: 1.4em;
     padding: 7px 10px;
     background-color: #cde;
     box-shadow: inset 0 -1px 0 #fff;
