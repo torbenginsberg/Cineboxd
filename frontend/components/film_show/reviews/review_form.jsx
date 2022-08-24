@@ -38,16 +38,6 @@ class ReviewForm extends React.Component {
         // window.location.reload(false);
     }
 
-    handlePosterMouseOver() {
-        let target = document.getElementById('overlay');
-        target.style.display = 'block';
-    }
-
-    handlePosterMouseOut() {
-        let target = document.getElementById('overlay');
-        target.style.display = 'none';
-    }
-
     update(field) {
         return e => {
             return this.setState({ [field]: e.currentTarget.value })
@@ -64,12 +54,12 @@ class ReviewForm extends React.Component {
                             <section className="poster-frame">
                                 <div className="review-form-poster">
                                     <div>
-                                        <img className="review-form-image" src={this.props.film.posterUrl} />
-                                        <a href={`films/${this.props.film.id}`} className="frame-link" target="_blank">
-                                            <span onMouseOver={this.handlePosterMouseOver} 
-                                                onMouseOut={this.handlePosterMouseOut} 
-                                                id="overlay">
-                                            </span>
+                                        <img
+                                            className="review-form-image" 
+                                            src={this.props.film.posterUrl} />
+                                        <a 
+                                            href={`films/${this.props.film.id}`} 
+                                            className="frame-link" target="_blank">
                                         </a>
                                     </div>
                                 </div>
