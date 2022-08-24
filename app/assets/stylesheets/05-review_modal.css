@@ -118,22 +118,6 @@
     white-space: nowrap;
 }
 
-#overlay {
-    border: 1px solid #00e054;
-    border-radius: 3px;
-    bottom: -3px;
-    display: none;
-    left: -3px;
-    right: -3px;
-    top: -3px;
-    overflow: hidden;
-    position: absolute;
-    text-indent: 110%;
-    transition: border .1s linear;
-    white-space: nowrap;
-    cursor: pointer;
-}
-
 .review-form-right-column {
     float: left;
     width: 510px;
