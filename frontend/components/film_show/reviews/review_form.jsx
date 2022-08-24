@@ -35,6 +35,16 @@ class ReviewForm extends React.Component {
         }
     }
 
+    handlePosterMouseOver() {
+        let target = document.getElementById('overlay');
+        target.style.display = 'block';
+    }
+
+    handlePosterMouseOut() {
+        let target = document.getElementById('overlay');
+        target.style.display = 'none';
+    }
+
     update(field) {
         return e => {
             return this.setState({ [property]: e.currentTarget.value })
@@ -44,31 +54,61 @@ class ReviewForm extends React.Component {
     render() {
         return (
             <div className="review-form-wrapper">
-                <div onClick={this.props.closeModal} className='close-x-review'>X</div>
+                <div className="review-form-container">
+                    <div onClick={this.props.closeModal} className='close-x-review'>X</div>
+                    <div className="review-form">
+                        <aside className="review-form-left-column">
+                            <section className="poster-frame">
+                                <div className="review-form-poster">
+                                    <div>
+                                        <img className="review-form-image" src={this.props.film.posterUrl} />
+                                        <a href={`films/${this.props.film.id}`} className="frame-link" target="_blank">
+                                            <span onMouseOver={this.handlePosterMouseOver} 
+                                                onMouseOut={this.handlePosterMouseOut} 
+                                                id="overlay">
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </section>
+                        </aside>
 
-                <form onSubmit={this.handleSubmit}>
-                    <p className="review-header">I WATCHED...</p>
-                    <h1>{this.props.film.title}</h1>
-                    <br />
+                        <section className="review-form-right-column">
+                            <h1 id="review-form-header">I WATCHED...</h1>
+                            <br />
+                            <h2 className="headline-2">
+                                <span id="film-title-review">{this.props.film.title}</span>
+                                <small id="film-year-review">{this.props.film.year}</small>
+                            </h2>
 
-                    <img src={this.props.film.posterUrl} />
+                            <form className="review-form-inputs" onSubmit={this.handleSubmit}>
+                                <div className="date-input-container">
+                                    <input type="date"
+                                        className="review-date-input"
+                                        value={this.state.date_watched}
+                                        onChange={this.update('date_watched')}
+                                    />
+                                </div>
 
-                    <input type="date"
-                        className="review-date-input"
-                        value={this.state.date_watched}
-                        onChange={this.update('date_watched')}
-                    />
+                                <div className="body-input-container">
+                                    <textarea 
+                                        className="review-body-input" 
+                                        cols='30'
+                                        rows='5'
+                                        value={this.state.body}
+                                        onChange={this.update('body')} 
+                                    />
+                                </div>
 
-                    <textarea 
-                        className="review-body-input" 
-                        cols='30'
-                        rows='5'
-                        value={this.state.body}
-                        onChange={this.update('body')} 
-                    />
-
-                    <input type="submit" className="green-submit"/>
-                </form>
+                                <div className="submit-container">
+                                    <div className="inner-submit-container">
+                                        <input type="submit" className="green-submit" value="SAVE"/>
+                                    </div>
+                                </div>
+                            </form>
+                        </section>
+                    </div>
+                </div>
             </div>
         );
     }
