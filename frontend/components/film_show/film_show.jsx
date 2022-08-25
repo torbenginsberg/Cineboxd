@@ -16,7 +16,8 @@ class FilmShow extends React.Component {
 
     currentUserReview() {
         let theCurrentUser = this.props.currentUser
-        return Object.values(this.props.film.reviews).find(review => review.user_id === theCurrentUser.id);
+        let targetReviews = this.props.film.reviews ? this.props.film.reviews : {};
+        return Object.values(targetReviews).find(review => review.user_id === theCurrentUser.id);
     }
 
     render() {
