@@ -21,7 +21,7 @@ export default ({ currentUser, logout, openModal}) => {
                     <a className="nav-item" id="profile-name-text">{currentUser.username}</a>
                     <ProfileDropdownContainer />
                 </li>
-                <li className="nav-item"><a className="nav-item-link" onClick={logout}>Log Out</a></li>
+                <li className="nav-item"><a className="nav-item-link" onClick={logout} href='/'>Log Out</a></li>
                 <li className="nav-item"><a className="nav-item-link">Activity</a></li>
                 <li className="nav-item"><a className="nav-item-link">Films</a></li>
                 <li className="nav-item"><a className="nav-item-link">Lists</a></li>
