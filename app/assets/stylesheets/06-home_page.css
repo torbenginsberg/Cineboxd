@@ -65,3 +65,41 @@
 .home-sign-up > .green-submit {
     font-size: 16px;
 }
+
+.home-film-list {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    background: #14181c;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.poster-link img {
+    width: 150px;
+    height: 225px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+}
+
+.poster-link img:hover {
+    border: 1px solid #00e054;
+    background-color: #fff;
+    color: #fff;
+}
+
+@media only screen and (max-width: 1000px) {
+    .poster-link img {
+        width: 180px;
+        height: 270px;
+        border-radius: 3px;
+        border: 1px solid transparent;
+    }
+
+    .home-film-list {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        flex-wrap: wrap;
+    }
+}
