@@ -5,12 +5,20 @@ import HomeBackdrop from '../../../app/assets/images/godfather-brando-1.png'
 export default ({ currentUser, openModal }) => {
     return (
         <div className="home-page">
-            <div className="film-show-backdrop-container">
-                <div className="film-show-backdrop-wrapper">
-                    <div className="backdrop-placeholder"></div>
-                    <div className="home-backdrop-image" style={{backgroundImage: `url(${HomeBackdrop})`}}></div>
-                    <div className="film-show-backdrop-fade"></div>
+            <img src={HomeBackdrop} />
+
+            <div className="home-backdrop">
+                <div className="backdrop-fade">
+                    <h2 className='home-headline'>The social network for film lovers.</h2>
+                    {currentUser ? '' : <p className="home-sign-up" onClick={() => openModal({modal_type: 'signup'})}>
+                        <button className="green-submit">Get started - it's free!</button>
+                    </p>}
                 </div>
+            </div>
+            
+            <div className="home-movie-list">
+
+                
             </div>
         </div>
     )

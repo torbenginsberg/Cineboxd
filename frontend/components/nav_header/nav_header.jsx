@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from 'react-router-dom';
 import ProfileDropdownContainer from "./profile_dropdown_container";
+import CineboxdLogo from '../../../app/assets/images/Cineboxd-1.jpeg'
 
 export default ({ currentUser, logout, openModal}) => {
     const handleProfileMouseOver = () => {
@@ -44,7 +45,7 @@ export default ({ currentUser, logout, openModal}) => {
         <header className="nav-bar">
             <Link to='/'>
                 <div className="logo">
-                    <p>LOGO</p>
+                    <img src={CineboxdLogo} />
                 </div>
             </Link>
             <div>
