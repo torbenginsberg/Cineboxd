@@ -1,0 +1,8 @@
+.home-backdrop-image {
+    opacity: 3;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 99.95%;
+    width: 100%;
+    box-shadow: 0 0 50px 50px #14181c inset;
+}
