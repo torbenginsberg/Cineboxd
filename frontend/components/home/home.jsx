@@ -7,6 +7,9 @@ import FrancesHa from '../../../app/assets/images/francesha_poster.png';
 import Mononoke from '../../../app/assets/images/mononoke_poster.png';
 import Social from '../../../app/assets/images/social_poster.png';
 import Whiplash from '../../../app/assets/images/whiplash_poster.png';
+import { AiFillEye } from 'react-icons/ai';
+import { FaHeart } from 'react-icons/fa';
+import { CgNotes } from 'react-icons/cg';
 
 export default ({ currentUser, openModal }) => {
     return (
@@ -31,7 +34,27 @@ export default ({ currentUser, openModal }) => {
                 <Link to="/films/14" className="poster-link"><img src={Social} alt="The Social Network" /></Link>
             </div>
 
-            <p className=""></p>
+            <p className="center-headlines">Cineboxd lets you...</p>
+
+            <div className="cineboxd-lets-you">
+                <div className="cineboxd-lets-you-box">
+                    <i className="lets-you-heart"><FaHeart /></i>
+                    <p>Show some love for your favorite films with a "like"</p>
+                </div>
+
+                <div className="cineboxd-lets-you-box">
+                    <i className="lets-you-review"><CgNotes /></i>
+                    <p>Write reviews to share your thoughts with the community.</p>
+                </div>
+
+                <div className="cineboxd-lets-you-box">
+                    <i className="lets-you-watch"><AiFillEye /></i>
+                    <p>Keep track of every film you've ever watched...or just start from the day you join!</p>
+                </div>
+            </div>
+
+            <p className="center-headlines">Check out the inspiration for this site...</p>
+            <div className="center-headlines"><a href="//letterboxd.com"><img src="https://a.ltrbxd.com/logos/letterboxd-logo-h-neg-rgb-1000px.png" alt="Letterboxd" className="letterboxd-horizontal" /></a></div>
         </div>
     )
 }

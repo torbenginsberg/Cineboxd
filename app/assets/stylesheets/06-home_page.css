@@ -102,4 +102,71 @@
         margin-bottom: 30px;
         flex-wrap: wrap;
     }
+
+    .cineboxd-lets-you-box {
+        width: 100%;
+    }
+
+    .letterboxd-horizontal {
+        max-width: 600px;
+    }
+    
+    .cineboxd-lets-you-box i {
+        font-size: 40px;
+    }
+
+    .home-page p {
+        font-size: 36px;
+    }
+
+    .home-page .home-headline {
+        font-size: 50px;
+    }
+
+    .home-page .home-sign-up {
+        font-size: 40px;
+    }
+}
+
+.cineboxd-lets-you {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.cineboxd-lets-you-box {
+    background: #456;
+    color: #fff;
+    width: 250px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 6px;
+}
+
+.cineboxd-lets-you-box * {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.cineboxd-lets-you-box > i {
+    font-size: 20px;
+}
+
+.center-headlines {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.letterboxd-horizontal {
+    max-width: 770px;
 }
