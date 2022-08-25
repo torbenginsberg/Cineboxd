@@ -10,6 +10,7 @@ class LoginForm extends React.Component {
             password: ''
         };
         this.handleSubmit = this.handleSubmit.bind(this);
+        this.handleDemoSubmit = this.handleDemoSubmit.bind(this);
     }
 
     handleSubmit(e) {
@@ -19,6 +20,18 @@ class LoginForm extends React.Component {
             .then(() => {
                 this.props.closeModal();
                 // might want to do something with the history here
+            })
+    }
+
+    handleDemoSubmit(e) {
+        e.preventDefault();
+        const user = {
+            username: 'torbtheorb',
+            password: 'convent1909'
+        };
+        this.props.processLoginForm(user)
+            .then(() => {
+                this.props.closeModal();
             })
     }
 
@@ -38,6 +51,16 @@ class LoginForm extends React.Component {
                 ))}
             </ul>
         );
+    }
+
+    renderDemoButton() {
+        const button = () => (
+            <button
+                onClick={this.handleDemoSubmit}
+                className='login-demo'
+            >Demo</button>
+        )
+        return button();
     }
 
     render() {
@@ -64,6 +87,10 @@ class LoginForm extends React.Component {
                             />
                         </label>
                         <input type="submit" className="login-submit" value='SIGN IN'/>
+
+                        <div className="login-demo-container">
+                            {this.renderDemoButton()}
+                        </div>
                     </div>
                     {this.renderErrors()}
                 </form>
