@@ -24,7 +24,7 @@ export default ({ currentUser, openModal }) => {
                 <Link to="/films/32" className="poster-link"><img src='https://cineboxd-seed-photos.s3.amazonaws.com/francesha_poster.png' alt="Frances Ha" /></Link>
                 <Link to="/films/33" className="poster-link"><img src='https://cineboxd-seed-photos.s3.amazonaws.com/whiplash_poster.png' alt="Whiplash" /></Link>
                 <Link to="/films/35" className="poster-link"><img src='https://cineboxd-seed-photos.s3.amazonaws.com/dunkirk_poster.png' alt="Dunkirk" /></Link>
-                <Link to="/films/38q" className="poster-link"><img src='https://cineboxd-seed-photos.s3.amazonaws.com/social_poster.png' alt="The Social Network" /></Link>
+                <Link to="/films/38" className="poster-link"><img src='https://cineboxd-seed-photos.s3.amazonaws.com/social_poster.png' alt="The Social Network" /></Link>
             </div>
 
             <p className="center-headlines">Cineboxd lets you...</p>
