@@ -48,12 +48,12 @@ bueller.poster.attach(io: open('https://cineboxd-seed-photos.s3.amazonaws.com/bu
 bueller.backdrop.attach(io: open('https://cineboxd-seed-photos.s3.amazonaws.com/bueller_backdrop.png'), filename: 'bueller_backdrop.png')
 
 francesha = Film.create!(title: "Frances Ha", year: 2012, length: '86 mins', director_name: 'Noah Baumbach', summary: 'An aspiring dancer moves to New York City and becomes caught up in a whirlwind of flighty fair-weather friends, diminishing fortunes and career setbacks.')
-francesha.poster.attach(io: open('/Users/torbenginsberg/Desktop/fullstack/film_posters/francesha_poster.png'), filename: 'francesha_poster.png')
+francesha.poster.attach(io: open('https://cineboxd-seed-photos.s3.amazonaws.com/francesha_poster.png'), filename: 'francesha_poster.png')
 francesha.backdrop.attach(io: open('https://cineboxd-seed-photos.s3.amazonaws.com/francesha_backdrop.png'), filename: 'francesha_backdrop.png')
 
 whiplash = Film.create!(title: "Whiplash", year: 2014, length: '107 mins', director_name: 'Damien Chazelle', summary: 'Under the direction of a ruthless instructor, a talented young drummer begins to pursue perfection at any cost, even his humanity.')
 whiplash.poster.attach(io: open('https://cineboxd-seed-photos.s3.amazonaws.com/francesha_poster.png'), filename: 'whiplash_poster.png')
-whiplash.backdrop.attach(io: open('/Users/torbenginsberg/Desktop/fullstack/film_backdrops/whiplash_backdrop.png'), filename: 'whiplash_backdrop.png')
+whiplash.backdrop.attach(io: open('https://cineboxd-seed-photos.s3.amazonaws.com/whiplash_backdrop.png'), filename: 'whiplash_backdrop.png')
 
 inbruges = Film.create!(title: "In Bruges", year: 2008, length: '108 mins', director_name: 'Martin McDonagh', summary: 'Ray and Ken, two hit men, are in Bruges, Belgium, waiting for their next mission. While they are there they have time to think and discuss their previous assignment. When the mission is revealed to Ken, it is not what he expected.')
 inbruges.poster.attach(io: open('https://cineboxd-seed-photos.s3.amazonaws.com/inbruges_poster.png'), filename: 'inbruges_poster.png')
