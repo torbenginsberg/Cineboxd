@@ -73,6 +73,7 @@ class HomePage extends React.Component {
                 </div>
                 
                 <div className="home-film-list">
+                    {/* hard coded links for heroku to match the different ids */}
                     <Link to="/films/21" className="poster-link"><img src='https://cineboxd-seed-photos.s3.amazonaws.com/Sicario.jpeg' alt="Sicario" /></Link>
                     <Link to="/films/23" className="poster-link"><img src='https://cineboxd-seed-photos.s3.amazonaws.com/mononoke_poster.png' alt="Princess Mononoke" /></Link>
                     <Link to="/films/25" className="poster-link"><img src='https://cineboxd-seed-photos.s3.amazonaws.com/francesha_poster.png' alt="Frances Ha" /></Link>
