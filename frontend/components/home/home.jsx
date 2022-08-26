@@ -26,12 +26,12 @@ export default ({ currentUser, openModal }) => {
             </div>
             
             <div className="home-film-list">
-                <Link to="/films/4" className="poster-link"><img src={Sicario} alt="Sicario" /></Link>
-                <Link to="/films/6" className="poster-link"><img src={Mononoke} alt="Princess Mononoke" /></Link>
-                <Link to="/films/8" className="poster-link"><img src={FrancesHa} alt="Frances Ha" /></Link>
-                <Link to="/films/9" className="poster-link"><img src={Whiplash} alt="Whiplash" /></Link>
-                <Link to="/films/11" className="poster-link"><img src={Dunkirk} alt="Dunkirk" /></Link>
-                <Link to="/films/14" className="poster-link"><img src={Social} alt="The Social Network" /></Link>
+                <Link to="/films/16" className="poster-link"><img src={Sicario} alt="Sicario" /></Link>
+                <Link to="/films/18" className="poster-link"><img src={Mononoke} alt="Princess Mononoke" /></Link>
+                <Link to="/films/20" className="poster-link"><img src={FrancesHa} alt="Frances Ha" /></Link>
+                <Link to="/films/21" className="poster-link"><img src={Whiplash} alt="Whiplash" /></Link>
+                <Link to="/films/23" className="poster-link"><img src={Dunkirk} alt="Dunkirk" /></Link>
+                <Link to="/films/26" className="poster-link"><img src={Social} alt="The Social Network" /></Link>
             </div>
 
             <p className="center-headlines">Cineboxd lets you...</p>
@@ -54,7 +54,7 @@ export default ({ currentUser, openModal }) => {
             </div>
 
             <p className="center-headlines">Check out the inspiration for this site...</p>
-            <div className="center-headlines"><a href="//letterboxd.com"><img src="https://a.ltrbxd.com/logos/letterboxd-logo-h-neg-rgb-1000px.png" alt="Letterboxd" className="letterboxd-horizontal" /></a></div>
+            <div className="center-headlines"><a href="//letterboxd.com" target='_blank'><img src="https://a.ltrbxd.com/logos/letterboxd-logo-h-neg-rgb-1000px.png" alt="Letterboxd" className="letterboxd-horizontal" /></a></div>
         </div>
     )
 }
