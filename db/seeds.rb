@@ -52,7 +52,7 @@ francesha.poster.attach(io: open('https://cineboxd-seed-photos.s3.amazonaws.com/
 francesha.backdrop.attach(io: open('https://cineboxd-seed-photos.s3.amazonaws.com/francesha_backdrop.png'), filename: 'francesha_backdrop.png')
 
 whiplash = Film.create!(title: "Whiplash", year: 2014, length: '107 mins', director_name: 'Damien Chazelle', summary: 'Under the direction of a ruthless instructor, a talented young drummer begins to pursue perfection at any cost, even his humanity.')
-whiplash.poster.attach(io: open('https://cineboxd-seed-photos.s3.amazonaws.com/francesha_poster.png'), filename: 'whiplash_poster.png')
+whiplash.poster.attach(io: open('https://cineboxd-seed-photos.s3.amazonaws.com/whiplash_poster.png'), filename: 'whiplash_poster.png')
 whiplash.backdrop.attach(io: open('https://cineboxd-seed-photos.s3.amazonaws.com/whiplash_backdrop.png'), filename: 'whiplash_backdrop.png')
 
 inbruges = Film.create!(title: "In Bruges", year: 2008, length: '108 mins', director_name: 'Martin McDonagh', summary: 'Ray and Ken, two hit men, are in Bruges, Belgium, waiting for their next mission. While they are there they have time to think and discuss their previous assignment. When the mission is revealed to Ken, it is not what he expected.')

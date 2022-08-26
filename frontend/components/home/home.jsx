@@ -1,12 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import HomeBackdrop from '../../../app/assets/images/godfather-brando-1.png';
-import Sicario from '../../../app/assets/images/Sicario.jpeg';
-import Dunkirk from '../../../app/assets/images/dunkirk_poster.png';
-import FrancesHa from '../../../app/assets/images/francesha_poster.png';
-import Mononoke from '../../../app/assets/images/mononoke_poster.png';
-import Social from '../../../app/assets/images/social_poster.png';
-import Whiplash from '../../../app/assets/images/whiplash_poster.png';
 import { AiFillEye } from 'react-icons/ai';
 import { FaHeart } from 'react-icons/fa';
 import { CgNotes } from 'react-icons/cg';
@@ -14,7 +7,7 @@ import { CgNotes } from 'react-icons/cg';
 export default ({ currentUser, openModal }) => {
     return (
         <div className="home-page">
-            <img src={HomeBackdrop} />
+            <img src="https://cineboxd-seed-photos.s3.amazonaws.com/godfather-brando-1.png" />
 
             <div className="home-backdrop">
                 <div className="backdrop-fade">
@@ -26,12 +19,12 @@ export default ({ currentUser, openModal }) => {
             </div>
             
             <div className="home-film-list">
-                <Link to="/films/16" className="poster-link"><img src={Sicario} alt="Sicario" /></Link>
-                <Link to="/films/18" className="poster-link"><img src={Mononoke} alt="Princess Mononoke" /></Link>
-                <Link to="/films/20" className="poster-link"><img src={FrancesHa} alt="Frances Ha" /></Link>
-                <Link to="/films/21" className="poster-link"><img src={Whiplash} alt="Whiplash" /></Link>
-                <Link to="/films/23" className="poster-link"><img src={Dunkirk} alt="Dunkirk" /></Link>
-                <Link to="/films/26" className="poster-link"><img src={Social} alt="The Social Network" /></Link>
+                <Link to="/films/28" className="poster-link"><img src='https://cineboxd-seed-photos.s3.amazonaws.com/Sicario.jpeg' alt="Sicario" /></Link>
+                <Link to="/films/30" className="poster-link"><img src='https://cineboxd-seed-photos.s3.amazonaws.com/mononoke_poster.png' alt="Princess Mononoke" /></Link>
+                <Link to="/films/32" className="poster-link"><img src='https://cineboxd-seed-photos.s3.amazonaws.com/francesha_poster.png' alt="Frances Ha" /></Link>
+                <Link to="/films/33" className="poster-link"><img src='https://cineboxd-seed-photos.s3.amazonaws.com/whiplash_poster.png' alt="Whiplash" /></Link>
+                <Link to="/films/35" className="poster-link"><img src='https://cineboxd-seed-photos.s3.amazonaws.com/dunkirk_poster.png' alt="Dunkirk" /></Link>
+                <Link to="/films/38q" className="poster-link"><img src='https://cineboxd-seed-photos.s3.amazonaws.com/social_poster.png' alt="The Social Network" /></Link>
             </div>
 
             <p className="center-headlines">Cineboxd lets you...</p>
