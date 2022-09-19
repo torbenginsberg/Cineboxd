@@ -11,7 +11,7 @@ const reviewsReducer = (state={}, action) => {
     let newState = Object.assign({}, state);
     switch (action.type) {
         case RECEIVE_FILM_REVIEWS:
-            return action.reviews
+            return action.reviews.reviews
         case RECEIVE_REVIEW:
             newState[action.review.id] = action.review;
             return newState;

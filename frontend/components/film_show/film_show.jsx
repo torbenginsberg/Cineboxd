@@ -12,6 +12,7 @@ class FilmShow extends React.Component {
 
     componentDidMount() {
         this.props.fetchFilm(this.props.match.params.filmId);
+        this.props.fetchFilmReviews(this.props.match.params.filmId);
     }
 
     currentUserReview() {
