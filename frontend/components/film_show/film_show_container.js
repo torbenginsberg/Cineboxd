@@ -5,9 +5,10 @@ import { fetchFilmReviews } from "../../actions/review_actions";
 import { openModal } from "../../actions/modal_actions";
 
 const mSTP = (state, ownProps) => {
+    const thisFilm = state.entities.films[ownProps.match.params.filmId] || {}
     return ({
         currentUser: state.entities.users[state.session.id],
-        film: state.entities.films[ownProps.match.params.filmId]
+        film: thisFilm
     })
 };
 

@@ -4,6 +4,7 @@ import { ReactDOM } from "react";
 import LikeButton from "./like_button";
 import LogButton from './log_button';
 import { AiOutlineClockCircle } from 'react-icons/ai';
+import ReviewListItemContainer from "./reviews/review_list_item_container";
 
 class FilmShow extends React.Component {
     constructor(props){
@@ -21,9 +22,19 @@ class FilmShow extends React.Component {
         return Object.values(targetReviews).find(review => review.user_id === theCurrentUser.id);
     }
 
+    isEmpty(obj) {
+        if (obj === undefined) return true;
+        return Object.keys(obj).length === 0
+    }
+
     render() {
         if (!this.props.film) return null;
+
         const { film, openModal } = this.props
+        const reviewsObj = film.reviews;
+
+        const reviewsArr = this.isEmpty(reviewsObj) ? [] : Object.values(reviewsObj)
+
         const reviewStatusText = this.currentUserReview() ? 'Edit your review...' : 'Write a review...';
         const modalType = this.currentUserReview() ? 'edit-review' : 'review';
         return(
@@ -109,9 +120,20 @@ class FilmShow extends React.Component {
                                 </aside>
                             </div>
                         </div>
+                        {this.isEmpty(reviewsObj) ? null : 
+                            reviewsArr.map(review => (
+                                <ReviewListItemContainer
+                                    review={review}
+                                    key={review.id}
+                                    deleteReview={this.props.deleteReview}
+                                    updateReview={this.props.updateReview}
+                                    openModal={this.props.openModal}
+                                    film={film}
+                                />
+                        ))}
                     </div>
                 </div>
-                {/* <img className="film-show-poster-sticky" src={film.posterUrl}/> */}
+                
             </div>
         )
     }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { openModal } from '../../actions/modal_actions';
+import { openModal } from '../../../actions/modal_actions';
 import ReviewListItem from './review_list_item';
 
 const mSTP = ({ entities: { users }, session: { id } }, { review }) => {

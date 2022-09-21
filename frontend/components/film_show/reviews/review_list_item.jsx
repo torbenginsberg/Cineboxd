@@ -1,8 +1,8 @@
 import React from "react";
 import { VscTrash } from 'react-icons/vsc';
-import { HiPencilSquare } from 'react-icons/hi';
+import { HiPencilAlt } from 'react-icons/hi';
 
-const ReviewListItem = ({ review, user }) => {
+const ReviewListItem = ({ review, user, currentUser }) => {
     const { body, film_id, user_id } = review;
 
     return (
@@ -20,7 +20,7 @@ const ReviewListItem = ({ review, user }) => {
                     currentUser ? (currentUser.id === review.user_id ?
                         <>
                             <div onClick={() => deleteReview(review.id)} className="delete-review-button"><i className="delete-review-icon"><VscTrash/></i></div>
-                            <div onClick={() => openModal({modal_type: 'edit-review'})} className="edit-review-button"><i className="edit-review-icon"><HiPencilSquare/></i></div>
+                            <div onClick={() => openModal({modal_type: 'edit-review'})} className="edit-review-button"><i className="edit-review-icon"><HiPencilAlt/></i></div>
                         </>
                     : null
                     ) 
