@@ -1,20 +1,29 @@
 import React from "react";
 import { VscTrash } from 'react-icons/vsc';
 import { HiPencilAlt } from 'react-icons/hi';
+import UserPhoto from '../../../../app/assets/images/user-avatar-placeholder.png';
 
 const ReviewListItem = ({ review, user, currentUser }) => {
     const { body, film_id, user_id } = review;
 
     return (
-        <div className="review-list-item-container">
+        <li className="review-list-item-container">
 
-            <div className="review-top-line">
-                {/* <div className="profile-pic"></div> */}
-                <div className="review-by">Review by</div><b>{user.username}</b>
+            <img src={UserPhoto} alt="UserPhoto" className="user-avatar"/>
 
-                <div className="review-star-rating">12345</div>
+            <div className="review-details">
+                <div className="review-top-line-block">
+                    <div className="review-top-line">
+                        <a className="reviewer-link">
+                            Review by&nbsp;
+                            <strong className="reviewer-name">{user.username}</strong>
+                        </a>
 
-                <div className="review-like">0</div>
+                        <div className="review-star-rating">12345</div>
+
+                        <div className="review-like">0</div>
+                    </div>
+                </div>
 
                 {
                     currentUser ? (currentUser.id === review.user_id ?
@@ -26,12 +35,12 @@ const ReviewListItem = ({ review, user, currentUser }) => {
                     ) 
                 : null 
                 }
+                <div className="review-body">
+                    {body ? <p>{body}</p> : <p>No text with this review</p>}
+                </div>
             </div>
 
-            <div className="review-body">
-                {body ? <p>{body}</p> : <p>No text with this review</p>}
-            </div>
-        </div>
+        </li>
     )
 }
 

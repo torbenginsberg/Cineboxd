@@ -1,4 +1,75 @@
+.review-section-heading {
+    border-bottom: 1px solid #456;
+    color: #9ab;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: .075em;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.review-section-heading p {
+    color: #9ab;
+}
+
+.film-reviews {
+    clear: both;
+}
+
+.review-list-item-container:first-child {
+    padding-top: 5px;
+}
+
 .review-list-item-container {
-    border-bottom: 1px solid #435466;
-    padding-top: 10px;
+    border-color: #2c3440;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #456;
+    overflow: hidden;
+    padding: 15px 0 18px;
+}
+
+.user-avatar {
+    margin-right: 5px;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+    -webkit-background-clip: padding-box;
+    display: block;
+    float: left;
+    position: relative;
+    color: #678;
+    text-decoration: none;
+}
+
+.review-details {
+    width: 610px;
+}
+
+.review-top-line-block {
+    margin-bottom: 10px;
+    color: #678;
+    display: flex;
+    position: relative;
+}
+
+.review-top-line {
+    font-size: 1rem;
+    line-height: 24px;
+    flex-grow: 1;
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.reviewer-link {
+    color: #678;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.reviewer-name {
+    color: #abc;
+    margin-right: 0;
+    font-weight: 400;
+    display: inline-block;
 }

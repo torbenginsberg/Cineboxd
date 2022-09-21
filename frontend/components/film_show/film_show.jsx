@@ -118,19 +118,30 @@ class FilmShow extends React.Component {
                                         </ul>
                                     </section>
                                 </aside>
+
+                                <section className="film-reviews">
+                                    <section className="reviews-block">
+                                        <h2 className="review-section-heading">
+                                            <p>Reviews</p>
+                                        </h2>
+
+                                        <ul>
+                                            {this.isEmpty(reviewsObj) ? null : 
+                                                reviewsArr.map(review => (
+                                                    <ReviewListItemContainer
+                                                        review={review}
+                                                        key={review.id}
+                                                        deleteReview={this.props.deleteReview}
+                                                        updateReview={this.props.updateReview}
+                                                        openModal={this.props.openModal}
+                                                        film={film}
+                                                    />
+                                            ))}
+                                        </ul>
+                                    </section>
+                                </section>
                             </div>
                         </div>
-                        {this.isEmpty(reviewsObj) ? null : 
-                            reviewsArr.map(review => (
-                                <ReviewListItemContainer
-                                    review={review}
-                                    key={review.id}
-                                    deleteReview={this.props.deleteReview}
-                                    updateReview={this.props.updateReview}
-                                    openModal={this.props.openModal}
-                                    film={film}
-                                />
-                        ))}
                     </div>
                 </div>
                 
