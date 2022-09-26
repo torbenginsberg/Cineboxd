@@ -60,6 +60,7 @@
     text-align: center;
     font-family: sans-serif;
     margin-right: 25%;
+    padding-top: 20px;
 }
 
 .home-sign-up > .green-submit {
@@ -74,6 +75,7 @@
     background: #14181c;
     padding-left: 20%;
     padding-right: 20%;
+    height: 350px;
 }
 
 .poster-link img {
