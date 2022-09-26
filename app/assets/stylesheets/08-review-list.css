@@ -12,6 +12,10 @@
     color: #9ab;
 }
 
+.reviews-block > ul {
+    padding-top: 7px;
+}
+
 .film-reviews {
     clear: both;
 }
@@ -29,7 +33,7 @@
 }
 
 .user-avatar {
-    margin-right: 5px;
+    margin-right: 10px;
     border-radius: 20px;
     height: 40px;
     width: 40px;
@@ -46,7 +50,7 @@
 }
 
 .review-top-line-block {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     color: #678;
     display: flex;
     position: relative;
@@ -72,4 +76,24 @@
     margin-right: 0;
     font-weight: 400;
     display: inline-block;
+}
+
+.review-star-rating {
+    margin-right: 7px;
+    position: relative;
+    /* top: -1px; */
+    /* background-position: -463px -50px; */
+    display: inline-block;
+    /* vertical-align: inherit; */
+    width: 65px;
+    height: 16px;
+    /* overflow: hidden; */
+    /* text-indent: 110%;
+    white-space: nowrap; */
+}
+
+.review-body {
+    font-size: 1.15384615rem;
+    line-height: 1.6;
+    color: #9ab;
 }
