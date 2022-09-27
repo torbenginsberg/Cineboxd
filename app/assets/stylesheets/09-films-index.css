@@ -1,0 +1,38 @@
+.films-index {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(#1e252d, #1e252d);
+    display: flex;
+    justify-content: center;
+}
+
+.films-index-list {
+    margin-bottom: 0;
+    list-style: none;
+    columns: 4;
+    -webkit-columns: 4;
+    -moz-columns: 4;
+    padding-left: 0;
+    width: 960px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+    width: 1000px;
+    text-align: center;
+}
+
+.films-index-list-item img {
+    width: 218px;
+    height: 318px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+}
+
+.films-index-list-item img:hover {
+    border: 2px solid #00e054;
+    background-color: #fff;
+    color: #fff;
+}
+
