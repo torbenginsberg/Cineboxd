@@ -33,10 +33,10 @@ export default ({ currentUser, logout, openModal}) => {
             <ul>
                 <li className="nav-item"><a className="nav-item-link" onClick={() => openModal({ modal_type: 'login'})}>Sign In</a></li>
                 <li className="nav-item"><a className="nav-item-link" onClick={() => openModal({ modal_type: 'signup'})}>Create Account</a></li>
-                <li className="nav-item"><a className="nav-item-link">Activity</a></li>
+                {/* <li className="nav-item"><a className="nav-item-link">Activity</a></li> */}
                 <li className="nav-item"><a className="nav-item-link">Films</a></li>
-                <li className="nav-item"><a className="nav-item-link">Lists</a></li>
-                <li className="nav-item"><a className="nav-item-link">Search</a></li>
+                {/* <li className="nav-item"><a className="nav-item-link">Lists</a></li> */}
+                {/* <li className="nav-item"><a className="nav-item-link">Search</a></li> */}
             </ul>
         </nav>
     );
