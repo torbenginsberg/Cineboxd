@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export default ({ logout }) => {
+export default ({ logout, currentUserId }) => {
     const navDropdownStyle = {
         display: 'none'
     }
