@@ -23,7 +23,7 @@ export default ({ currentUser, logout, openModal}) => {
                 </li>
                 <li className="nav-item"><a className="nav-item-link" onClick={logout} href='/'>Log Out</a></li>
                 {/* <li className="nav-item"><a className="nav-item-link">Activity</a></li> */}
-                <li className="nav-item"><a className="nav-item-link">Films</a></li>
+                <li className="nav-item"><a href="/#/films" className="nav-item-link">Films</a></li>
                 {/* <li className="nav-item"><a className="nav-item-link">Lists</a></li>
                 <li className="nav-item"><a className="nav-item-link">Search</a></li> */}
             </ul>
