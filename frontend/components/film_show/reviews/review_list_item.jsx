@@ -1,7 +1,6 @@
 import React from "react";
 import { VscTrash } from 'react-icons/vsc';
 import { HiPencilAlt } from 'react-icons/hi';
-import UserPhoto from '../../../../app/assets/images/user-avatar-placeholder.png';
 
 const ReviewListItem = ({ review, user, currentUser, openModal, deleteReview }) => {
     const { body, film_id, user_id } = review;
@@ -10,7 +9,7 @@ const ReviewListItem = ({ review, user, currentUser, openModal, deleteReview }) 
     return (
         <li className="review-list-item-container">
 
-            <img src={UserPhoto} alt="UserPhoto" className="user-avatar"/>
+            <img src="https://w7.pngwing.com/pngs/754/2/png-transparent-samsung-galaxy-a8-a8-user-login-telephone-avatar-pawn-blue-angle-sphere-thumbnail.png" alt="UserPhoto" className="user-avatar"/>
 
             <div className="review-details">
                 <div className="review-top-line-block">
