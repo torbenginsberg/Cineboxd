@@ -5,6 +5,7 @@ import UserPhoto from '../../../../app/assets/images/user-avatar-placeholder.png
 
 const ReviewListItem = ({ review, user, currentUser, openModal, deleteReview }) => {
     const { body, film_id, user_id } = review;
+    const username = user ? user.username : "username";
 
     return (
         <li className="review-list-item-container">
@@ -16,7 +17,7 @@ const ReviewListItem = ({ review, user, currentUser, openModal, deleteReview }) 
                     <div className="review-top-line">
                         <a className="reviewer-link">
                             Review by&nbsp;
-                            <strong className="reviewer-name">{user.username}</strong>
+                            <strong className="reviewer-name">{username}</strong>
                         </a>
 
                         {/* <span className="review-star-rating">12345</span> */}

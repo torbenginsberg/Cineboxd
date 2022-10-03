@@ -12,6 +12,7 @@ class FilmShow extends React.Component {
     }
 
     componentDidMount() {
+        window.scrollTo(0, 0);
         this.props.fetchFilm(this.props.match.params.filmId);
         this.props.fetchFilmReviews(this.props.match.params.filmId);
     }
@@ -38,10 +39,9 @@ class FilmShow extends React.Component {
         const reviewStatusText = this.currentUserReview() ? 'Edit your review...' : 'Write a review...';
         const modalType = this.currentUserReview() ? 'edit-review' : 'review';
         return(
-            <div>
+            <div className="film-show-all">
                 <div className="film-show-backdrop-container">
                     <div id="backdrop" className="film-show-backdrop-wrapper">
-                        <div className="backdrop-placeholder"></div>
                         <div className="backdrop-image" style={{backgroundImage: `url(${film.backdropUrl})`}}></div>
                         <div className="film-show-backdrop-fade"></div>
                     </div>
@@ -112,9 +112,9 @@ class FilmShow extends React.Component {
                                                     <p>Watchlist</p>
                                                 </span> */}
                                             </li>
-                                            <li className="actions-row-rating">rating</li>
+                                            {/* <li className="actions-row-rating">rating</li> */}
                                             <li className="basic-action-row" onClick={() => openModal({ modal_type: modalType})} film={film}>{reviewStatusText}</li>
-                                            <li>add to lists</li>
+                                            {/* <li>add to lists</li> */}
                                         </ul>
                                     </section>
                                 </aside>
