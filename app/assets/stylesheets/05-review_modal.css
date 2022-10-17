@@ -12,7 +12,7 @@
     position: absolute;
     top: 30%;
     left: 20%;
-    /* transform: translate(-50%, -50%); */
+    transform: translate(-50%, -50%);
 }
 
 .modal-background-edit-review {
@@ -188,4 +188,55 @@
     background-color: #89a;
     float: right;
     width: 75px;
+}
+
+
+@media only screen and (min-width: 1360px) and (max-width: 1560px){
+    .modal-child-edit-review {
+        left: 23%;
+    }
+
+    .modal-child-review {
+        left: 23%;
+    }
+}
+
+@media only screen and (min-width: 1561px) and (max-width: 1760px){
+    .modal-child-edit-review {
+        left: 27%;
+    }
+
+    .modal-child-review {
+        left: 27%;
+    }
+}
+
+@media only screen and (min-width: 1761px) and (max-width: 2100px){
+    .modal-child-edit-review {
+        left: 30%;
+    }
+
+    .modal-child-review {
+        left: 30%;
+    }
+}
+
+@media only screen and (min-width: 2101px) and (max-width: 2500px){
+    .modal-child-edit-review {
+        left: 33%;
+    }
+
+    .modal-child-review {
+        left: 33%;
+    }
+}
+
+@media only screen and (min-width: 2501px) {
+    .modal-child-edit-review {
+        left: 36%;
+    }
+
+    .modal-child-review {
+        left: 36%;
+    }
 }
