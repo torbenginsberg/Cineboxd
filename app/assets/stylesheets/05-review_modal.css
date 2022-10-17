@@ -190,6 +190,17 @@
     width: 75px;
 }
 
+.review-date-input {
+    font-family: Graphik, sans-serif;
+    letter-spacing: .05rem;
+}
+
+.review-body-input {
+    font-family: Graphik, sans-serif;
+    letter-spacing: .05rem;
+}
+
+/* media queries */
 
 @media only screen and (min-width: 1360px) and (max-width: 1560px){
     .modal-child-edit-review {
