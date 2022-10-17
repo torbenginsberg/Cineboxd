@@ -41,6 +41,11 @@
 	font-weight: 550;
 	top: 30%;
 	right: 3%;
+	letter-spacing: 1.5px;
+	height: 25px;
+	width: 65px;
+	margin-left: 5px;
+	margin-top: 5px;
 }
 
 .login-input {
@@ -93,6 +98,28 @@
 }
 
 .login-demo-container {
-	margin-left: 7px;
+	margin-left: 10px;
 	margin-top: 5px;
+	height: 30px;
+	width: 65px;
+}
+
+.login-demo {
+	color: white;
+	cursor: pointer;
+	background: #209ce4;
+	display: inline-block;
+	padding: 6px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	font-size: 12px;
+	text-transform: uppercase;
+	border-width: 0px;
+	border-radius: 3px;
+	font-weight: 550;
+	top: 30%;
+	right: 3%;
+	letter-spacing: 1.5px;
+	height: 25px;
+	width: 65px;
 }
