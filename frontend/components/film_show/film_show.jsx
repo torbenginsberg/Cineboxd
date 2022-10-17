@@ -70,10 +70,10 @@ class FilmShow extends React.Component {
                                     <h1 className="film-show-title">{film.title}</h1>
                                     <p>
                                         <small className="number">
-                                            <a href="/">{film.year}</a>
+                                            <p>{film.year}</p>
                                         </small>
                                          {" Directed by "}
-                                        <a href="/">{film.director_name}</a>
+                                        <p className="director-name">{film.director_name}</p>
                                     </p>
                                 </section>
                                 <section className="featured-film-details">
