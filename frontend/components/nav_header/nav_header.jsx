@@ -4,20 +4,20 @@ import ProfileDropdownContainer from "./profile_dropdown_container";
 import CineboxdLogo from '../../../app/assets/images/Cineboxd-1.jpeg';
 
 export default ({ currentUser, logout, openModal}) => {
-    const handleProfileMouseOver = () => {
-        let target = document.getElementById('profile-dropdown');
-        target.style.display = 'block';
-    }
+    // const handleProfileMouseOver = () => {
+    //     let target = document.getElementById('profile-dropdown');
+    //     target.style.display = 'block';
+    // }
 
-    const handleProfileMouseOut = () => {
-        let target = document.getElementById('profile-dropdown');
-        target.style.display = 'none';
-    }
+    // const handleProfileMouseOut = () => {
+    //     let target = document.getElementById('profile-dropdown');
+    //     target.style.display = 'none';
+    // }
 
     const display = currentUser ? (
         <nav className="nav-header">
             <ul className="nav-items">
-                <li onMouseOver={handleProfileMouseOver} onMouseOut={handleProfileMouseOut} className="nav-item">
+                <li className="nav-item">
                     <a className="nav-item" id="profile-name-text">{currentUser.username}</a>
                     <ProfileDropdownContainer />
                 </li>
