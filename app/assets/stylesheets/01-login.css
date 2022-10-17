@@ -48,6 +48,10 @@
 	margin-top: 5px;
 }
 
+.login-submit:hover {
+	background: #009c27;
+}
+
 .login-input {
 	border: none;
 	font-size: 12px;
@@ -122,4 +126,8 @@
 	letter-spacing: 1.5px;
 	height: 25px;
 	width: 65px;
+}
+
+.login-demo:hover {
+	background: #1a7ab2;
 }
