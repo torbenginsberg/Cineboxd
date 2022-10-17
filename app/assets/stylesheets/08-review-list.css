@@ -97,3 +97,21 @@
     line-height: 1.6;
     color: #9ab;
 }
+
+.delete-review-button {
+    cursor: pointer;
+}
+
+.edit-review-button {
+    cursor: pointer;
+}
+
+.delete-review-button:hover {
+    transform: scale(1.1);
+    transition: .15s;
+}
+
+.edit-review-button:hover {
+    transform: scale(1.1);
+    transition: .15s;
+}
