@@ -65,7 +65,9 @@
 }
 
 .home-sign-up > .green-submit {
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 3px;
 }
 
 .home-film-list {

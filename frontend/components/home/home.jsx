@@ -67,7 +67,7 @@ class HomePage extends React.Component {
                     <div className="backdrop-fade">
                         <h2 className='home-headline'>The social network for film lovers.</h2>
                         {currentUser ? '' : <p className="home-sign-up" onClick={() => openModal({modal_type: 'signup'})}>
-                            <button className="green-submit">Get started - it's free!</button>
+                            <button className="green-submit">GET STARTED - IT'S FREE!</button>
                         </p>}
                     </div>
                 </div>
