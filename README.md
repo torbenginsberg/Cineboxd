@@ -36,7 +36,7 @@ Alternatively, click the Films button in the top right of the navbar to see the 
 
 Once you've landed on a film's show page, you will see backdrop image, poster, and some background information on the film. You will also have an action box for all of your functionality. The status of your likes and logs is dynamic.
 
-You can write a review and include the date that you watched the film. Coming soon, this review will render along with reviews from other users on the film's show page.
+You can write a review and include the date that you watched the film. This review will render along with reviews from other users on the film's show page.
 
 ![WriteReview](write_review.png)
 
