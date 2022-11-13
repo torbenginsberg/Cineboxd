@@ -24,9 +24,13 @@ Users are able to provide a username, email and password to create an account. A
 
 ### Basic Navigation
 
-Upon signing in, users can access the linked poster list on the home page to visit show pages for individual films, where the core functionality lies. I will be adding a full films index page as well as search functionality to expand the navigation capabilities.
+Upon signing in, users can access the linked poster list on the home page to visit show pages for the featured films.
 
 ![HomeNav](home_nav.png)
+
+Alternatively, click the Films button in the top right of the navbar to see the full list of films included on the site.
+
+![FilmsIndex](Films_Index.png)
 
 ### Film Show Page & Reviews
 
