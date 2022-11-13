@@ -85,7 +85,5 @@ function Modal({modal, closeModal}) {
 
 ## Future Scope Features
 
-* Show reviews of a film on its show page
-* Films index page
 * Search functionality
 * List building (ex. My Favorite Comedies of the 2010s)
