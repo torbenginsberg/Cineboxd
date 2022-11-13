@@ -11,13 +11,17 @@
 #  updated_at      :datetime         not null
 #
 class User < ApplicationRecord
+    # callback called whenever Active Record user object is instantiated
     after_initialize :ensure_session_token
+
+    # validations
     validates :username, :session_token, presence: true, uniqueness: true
     validates :password, length: { minimum: 6 }, allow_nil: true
     validates :password_digest, presence: true
 
     attr_reader :password
 
+    # associations
     has_many :likes, dependent: :destroy
     has_many :logs, dependent: :destroy
     has_many :reviews, dependent: :destroy

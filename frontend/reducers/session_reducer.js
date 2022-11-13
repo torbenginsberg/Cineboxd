@@ -11,9 +11,9 @@ const _nullUser = {
     id: null,
 }
 
-//listens for two action types
+//listens for action types
 const sessionReducer = (state = _nullUser, action) => {
-    Object.freeze(state);
+    Object.freeze(state); // prevents the state from accidentally being mutated
     switch (action.type) {
         case RECEIVE_CURRENT_USER:
             return Object.assign({}, { id: action.currentUser.id }); // sets sesison id to the action's user.id

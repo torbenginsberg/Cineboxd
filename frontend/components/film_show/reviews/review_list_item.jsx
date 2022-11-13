@@ -19,6 +19,8 @@ const ReviewListItem = ({ review, user, currentUser, openModal, deleteReview }) 
                             <strong className="reviewer-name">{username}</strong>
                         </a>
 
+                        {/* leaving the below plaeholder comments, will come back to add these features */}
+
                         {/* <span className="review-star-rating">12345</span> */}
 
                         {/* <div className="review-like">0</div> */}

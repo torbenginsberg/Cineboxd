@@ -19,7 +19,6 @@ class LoginForm extends React.Component {
         this.props.processLoginForm(user)
             .then(() => {
                 this.props.closeModal();
-                // might want to do something with the history here
             })
     }
 

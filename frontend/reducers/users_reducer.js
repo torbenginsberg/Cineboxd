@@ -1,8 +1,5 @@
-
-
 import { RECEIVE_CURRENT_USER } from "../actions/session_actions";
 import { RECEIVE_FILM_REVIEWS } from "../actions/review_actions";
-import { FaAcquisitionsIncorporated } from "react-icons/fa";
 
 const usersReducer = (state = {}, action) => {
     Object.freeze(state);

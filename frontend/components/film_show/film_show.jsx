@@ -105,13 +105,11 @@ class FilmShow extends React.Component {
                                                         user_id={this.props.currentUser.id}
                                                     />
                                                 </span>
-                                                {/* <span className="action-watchlist">
-                                                    <i>
-                                                        <AiOutlineClockCircle />
-                                                    </i>
-                                                    <p>Watchlist</p>
-                                                </span> */}
+                                                
                                             </li>
+
+                                            {/* commented out features to be added later */}
+
                                             {/* <li className="actions-row-rating">rating</li> */}
                                             <li className="basic-action-row" onClick={() => openModal({ modal_type: modalType})} film={film}>{reviewStatusText}</li>
                                             {/* <li>add to lists</li> */}

@@ -15,5 +15,6 @@ class Like < ApplicationRecord
 
     belongs_to :user
 
+    # polymorphic so that I can add likes on reviews in the future
     belongs_to :likeable, polymorphic: :true
 end

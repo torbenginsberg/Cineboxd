@@ -6,6 +6,8 @@ export default ({ logout, currentUserId }) => {
         display: 'none'
     }
     return(
+        // commenting out my dropdown for now...but might want to bring back
+
         // <ul className="nav-dropdown" id='profile-dropdown' style={navDropdownStyle}>
         //     <li className="divider"><a href="/">Home</a></li>
         //     {/* <li><a href="/">Profile</a></li> */}
