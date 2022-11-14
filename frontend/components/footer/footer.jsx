@@ -16,16 +16,16 @@ export default () => {
                 </nav>
                 <div className="footer-links">
                     <nav className="footer-links-nav">
-                        <div className="links-list">
-                            <a href="https://www.linkedin.com/in/torben-ginsberg-095a77112/"><i><AiFillLinkedin/></i></a>
-                            <a href="https://github.com/torbenginsberg/Cineboxd"><i><AiFillGithub/></i></a>
-                            <a href="https://angel.co/u/torben-ginsberg"><i><FaAngellist/></i></a>
-                            <a href="https://torbenginsberg.github.io/"><i><AiOutlineUser/></i></a>
+                        <div>
+                            <a href="https://github.com/torbenginsberg/Cineboxd" target="_blank"><i><AiFillGithub/></i></a>
+                            <a href="https://www.linkedin.com/in/torben-ginsberg-095a77112/" target="_blank"><i><AiFillLinkedin/></i></a>
+                            <a href="https://angel.co/u/torben-ginsberg" target="_blank"><i><FaAngellist/></i></a>
+                            <a href="https://torbenginsberg.github.io/" target="_blank"><i><AiOutlineUser/></i></a>
                         </div>
                     </nav>
                 </div>
-                <p className="footer-message">Cineboxd. Made by a lover of films and an avid user of Letterboxd in Brooklyn, NY.</p>
             </div>
+            <p className="footer-message">Cineboxd. Made by a lover of films and an avid user of Letterboxd in Brooklyn, NY.</p>
         </footer>
     )
 }

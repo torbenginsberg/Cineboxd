@@ -55,7 +55,7 @@ class HomePage extends React.Component {
                     </div>
         
                     <p className="center-headlines">Check out the inspiration for this site...</p>
-                    <div className="center-headlines"><a href="//letterboxd.com" target='_blank'><img src="https://a.ltrbxd.com/logos/letterboxd-logo-h-neg-rgb-1000px.png" alt="Letterboxd" className="letterboxd-horizontal" /></a></div>
+                    <div className="center-headlines-logo"><a href="//letterboxd.com" target='_blank'><img src="https://a.ltrbxd.com/logos/letterboxd-logo-h-neg-rgb-1000px.png" alt="Letterboxd" className="letterboxd-horizontal" /></a></div>
                 </div>
             </div>
         )
