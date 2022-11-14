@@ -9,9 +9,9 @@ export default () => {
             <div className="footer-content-wrap">
                 <nav className="footer-nav">
                     <ul>
-                        <li><a href="/about">About</a></li>
-                        <li><a href="/films">Films</a></li>
-                        <li><a href="/contact">Contact</a></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/films">Films</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
                     </ul>
                 </nav>
                 <div className="footer-links">
