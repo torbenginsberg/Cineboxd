@@ -33,28 +33,30 @@ class HomePage extends React.Component {
                     <Link to="/films/28" className="poster-link"><img src='https://cineboxd-seed-photos.s3.amazonaws.com/dunkirk_poster.png' alt="Dunkirk" /></Link>
                     <Link to="/films/31" className="poster-link"><img src='https://cineboxd-seed-photos.s3.amazonaws.com/social_poster.png' alt="The Social Network" /></Link>
                 </div>
-    
-                <p className="center-headlines">Cineboxd lets you...</p>
-    
-                <div className="cineboxd-lets-you">
-                    <div className="cineboxd-lets-you-box">
-                        <i className="lets-you-heart"><FaHeart /></i>
-                        <p>Show some love for your favorite films with a "like"</p>
+
+                <div className="home-page-bottom-half">
+                    <p className="center-headlines">Cineboxd lets you...</p>
+        
+                    <div className="cineboxd-lets-you">
+                        <div className="cineboxd-lets-you-box">
+                            <i className="lets-you-heart"><FaHeart /></i>
+                            <p>Show some love for your favorite films with a "like"</p>
+                        </div>
+        
+                        <div className="cineboxd-lets-you-box">
+                            <i className="lets-you-review"><CgNotes /></i>
+                            <p>Write reviews to share your thoughts with the community.</p>
+                        </div>
+        
+                        <div className="cineboxd-lets-you-box">
+                            <i className="lets-you-watch"><AiFillEye /></i>
+                            <p>Keep track of every film you've ever watched...or just start from the day you join!</p>
+                        </div>
                     </div>
-    
-                    <div className="cineboxd-lets-you-box">
-                        <i className="lets-you-review"><CgNotes /></i>
-                        <p>Write reviews to share your thoughts with the community.</p>
-                    </div>
-    
-                    <div className="cineboxd-lets-you-box">
-                        <i className="lets-you-watch"><AiFillEye /></i>
-                        <p>Keep track of every film you've ever watched...or just start from the day you join!</p>
-                    </div>
+        
+                    <p className="center-headlines">Check out the inspiration for this site...</p>
+                    <div className="center-headlines"><a href="//letterboxd.com" target='_blank'><img src="https://a.ltrbxd.com/logos/letterboxd-logo-h-neg-rgb-1000px.png" alt="Letterboxd" className="letterboxd-horizontal" /></a></div>
                 </div>
-    
-                <p className="center-headlines">Check out the inspiration for this site...</p>
-                <div className="center-headlines"><a href="//letterboxd.com" target='_blank'><img src="https://a.ltrbxd.com/logos/letterboxd-logo-h-neg-rgb-1000px.png" alt="Letterboxd" className="letterboxd-horizontal" /></a></div>
             </div>
         )
     }

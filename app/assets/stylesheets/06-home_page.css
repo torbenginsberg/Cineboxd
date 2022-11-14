@@ -170,7 +170,6 @@
 .center-headlines {
     display: flex;
     justify-content: center;
-    margin-top: 24px;
     margin-bottom: 24px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 18px;
@@ -178,4 +177,8 @@
 
 .letterboxd-horizontal {
     max-width: 770px;
+}
+
+.home-page-bottom-half {
+    background: #14181c;
 }

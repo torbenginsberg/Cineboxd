@@ -8,6 +8,7 @@ import FilmsIndexContainer from "./films_index/films_index_container";
 import HomeContainer from "./home/home_container";
 import PageNotFound from "./404_page/page_not_found";
 import Modal from "./modal/modal";
+import Footer from './footer/footer';
 
 const App = () => {
     return (
@@ -21,6 +22,8 @@ const App = () => {
             <Route exact path='/films' component={FilmsIndexContainer}/>
             <Route path='*' component={PageNotFound} />
         </Switch>
+
+        <Route path="/" component={Footer}/>
     </div>
 )
 };
