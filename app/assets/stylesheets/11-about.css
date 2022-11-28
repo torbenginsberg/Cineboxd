@@ -1,0 +1,23 @@
+.about-backdrop {
+    background-image: url(https://cineboxd-seed-photos.s3.amazonaws.com/godfather-brando-1.png);
+    background-position: center -15px;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin: 0 auto;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    height: 660px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.about-title {
+    position: relative;
+    top: 66%;
+    left: 50%;
+    font-family: sans-serif;
+    text-align: center;
+    font-size: 40px;
+    transform: translate(-50%, 0);
+}
