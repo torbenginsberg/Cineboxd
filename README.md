@@ -24,15 +24,19 @@ Users are able to provide a username, email and password to create an account. A
 
 ### Basic Navigation
 
-Upon signing in, users can access the linked poster list on the home page to visit show pages for individual films, where the core functionality lies. I will be adding a full films index page as well as search functionality to expand the navigation capabilities.
+Upon signing in, users can access the linked poster list on the home page to visit show pages for the featured films.
 
 ![HomeNav](home_nav.png)
+
+Alternatively, click the Films button in the top right of the navbar to see the full list of films included on the site.
+
+![FilmsIndex](Films_Index.png)
 
 ### Film Show Page & Reviews
 
 Once you've landed on a film's show page, you will see backdrop image, poster, and some background information on the film. You will also have an action box for all of your functionality. The status of your likes and logs is dynamic.
 
-You can write a review and include the date that you watched the film. Coming soon, this review will render along with reviews from other users on the film's show page.
+You can write a review and include the date that you watched the film. This review will render along with reviews from other users on the film's show page.
 
 ![WriteReview](write_review.png)
 
@@ -81,7 +85,5 @@ function Modal({modal, closeModal}) {
 
 ## Future Scope Features
 
-* Show reviews of a film on its show page
-* Films index page
 * Search functionality
 * List building (ex. My Favorite Comedies of the 2010s)
