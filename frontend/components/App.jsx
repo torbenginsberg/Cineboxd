@@ -9,6 +9,7 @@ import HomeContainer from "./home/home_container";
 import PageNotFound from "./404_page/page_not_found";
 import Modal from "./modal/modal";
 import Footer from './footer/footer';
+import About from './about_page/about';
 
 const App = () => {
     return (
@@ -18,6 +19,7 @@ const App = () => {
 
         <Switch>
             <Route exact path='/' component={HomeContainer}/>
+            <Route exact path='/about' component={About} />
             <ProtectedRoute exact path='/films/:filmId' component={FilmShowContainer}/>
             <Route exact path='/films' component={FilmsIndexContainer}/>
             <Route path='*' component={PageNotFound} />
