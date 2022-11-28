@@ -5,6 +5,7 @@ export default () => {
         <div className="about-backdrop">
             <div className="backdrop-fade">
                 <h2 className="about-title">About</h2>
+                <br />
                 <div className="about-text">
                     <p>Cineboxd is a site for movie lovers. Use it as a diary to record and share your opinion about films as you watch them, or just to keep track of films you’ve seen in the past. 
                         <br />

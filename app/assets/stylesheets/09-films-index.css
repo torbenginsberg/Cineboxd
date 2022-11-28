@@ -40,8 +40,8 @@
     padding-top: 20px;
 }
 
-@media screen and (min-height: 1250px) {
-    /* .films-index-container {
+@media screen and (min-height: 1275px) {
+    .films-index {
         height: 1200px;
-    } */
+    }
 }
