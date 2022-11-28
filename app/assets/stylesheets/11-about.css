@@ -1,5 +1,5 @@
 .about-backdrop {
-    background-image: url(https://cineboxd-seed-photos.s3.amazonaws.com/godfather-brando-1.png);
+    background-image: url(https://cineboxd-seed-photos.s3.amazonaws.com/bladerunner--movie-scene-wallpaper.png);
     background-position: center -15px;
     background-repeat: no-repeat;
     background-size: 100% auto;
@@ -20,4 +20,43 @@
     text-align: center;
     font-size: 40px;
     transform: translate(-50%, 0);
+}
+
+.about-text {
+    position: relative;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-right: 25%;
+}
+
+.about-text p {
+    padding: 15px;
+}
+
+@media screen and (min-height: 850px) and (max-height: 1104px) {
+    .about-backdrop {
+        height: 900px;
+    }
+    .home-backdrop {
+        height: 900px;
+    }
+    .backdrop-fade {
+        height: 920px;
+    }
+}
+
+@media screen and (min-height: 1105px) and (max-height: 2000px) {
+    .about-backdrop {
+        height: 1200px;
+    }
+    .home-backdrop {
+        height: 1200px;
+    }
+    .backdrop-fade {
+        height: 1220px;
+    }
 }

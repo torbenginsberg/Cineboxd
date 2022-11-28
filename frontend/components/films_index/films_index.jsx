@@ -13,7 +13,7 @@ class FilmsIndex extends React.Component {
     render() {
         let { films } = this.props;
         return (
-            <div>
+            <div className="films-index-container">
                 <div className="films-index">
                     <ul className="films-index-list">
                         {films ? films.map(thisFilm => <FilmIndexItem key={thisFilm.id} film={thisFilm} />) : null }

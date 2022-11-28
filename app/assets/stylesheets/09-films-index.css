@@ -39,3 +39,9 @@
 .films-index-list-item {
     padding-top: 20px;
 }
+
+@media screen and (min-height: 1250px) {
+    /* .films-index-container {
+        height: 1200px;
+    } */
+}
